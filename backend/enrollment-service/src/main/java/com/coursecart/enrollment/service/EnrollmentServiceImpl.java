@@ -1,0 +1,76 @@
+package com.coursecart.enrollment.service;
+
+import com.coursecart.enrollment.dto.EnrollmentDTO;
+import com.coursecart.enrollment.entity.Enrollment;
+import com.coursecart.enrollment.entity.LessonProgress;
+import com.coursecart.enrollment.exception.EnrollmentServiceException;
+import com.coursecart.enrollment.exception.ErrorMessages;
+import org.springframework.http.HttpStatus;
+import com.coursecart.enrollment.repository.EnrollmentRepository;
+import com.coursecart.enrollment.repository.LessonProgressRepository;
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+@Service
+public class EnrollmentServiceImpl implements EnrollmentService {
+
+    private final EnrollmentRepository enrollmentRepository;
+    private final LessonProgressRepository lessonProgressRepository;
+    private final ModelMapper modelMapper;
+
+    public EnrollmentServiceImpl(EnrollmentRepository enrollmentRepository, LessonProgressRepository lessonProgressRepository, ModelMapper modelMapper) {
+        this.enrollmentRepository = enrollmentRepository;
+        this.lessonProgressRepository = lessonProgressRepository;
+        this.modelMapper = modelMapper;
+    }
+
+    @Override
+    public List<EnrollmentDTO> getEnrollmentsByUserId(Long userId) {
+        throw new UnsupportedOperationException("TODO[TRAINEE]: Implement getEnrollmentsByUserId");
+    }
+
+    @Override
+    public List<Long> getCompletedLessonIds(Long enrollmentId) {
+        throw new UnsupportedOperationException("TODO[TRAINEE]: Implement getCompletedLessonIds");
+    }
+
+    @Override
+    @Transactional
+    public void markLessonComplete(Long enrollmentId, Long lessonId, boolean completed) {
+        throw new UnsupportedOperationException("TODO[TRAINEE]: Implement markLessonComplete");
+
+    @Override
+    public Map<String, Long> countTotalEnrollments() {
+        throw new UnsupportedOperationException("TODO[TRAINEE]: Implement countTotalEnrollments");
+    }
+
+    @Override
+    public boolean checkEnrollment(Long userId, Long courseId) {
+        return enrollmentRepository.findByUserIdAndCourseId(userId, courseId).isPresent();
+    }
+
+    @Override
+    @Transactional
+    public EnrollmentDTO createEnrollment(Long userId, Long courseId) {
+        if (checkEnrollment(userId, courseId)) {
+            throw new EnrollmentServiceException(HttpStatus.CONFLICT, ErrorMessages.ALREADY_ENROLLED);
+        }
+
+        Enrollment enrollment = new Enrollment();
+        enrollment.setUserId(userId);
+        enrollment.setCourseId(courseId);
+        
+        Enrollment saved = enrollmentRepository.save(enrollment);
+        return mapToDTO(saved);
+    }
+
+    private EnrollmentDTO mapToDTO(Enrollment enrollment) {
+        return modelMapper.map(enrollment, EnrollmentDTO.class);
+    }
+}
