@@ -55,7 +55,7 @@ public class CommerceServiceImpl implements CommerceService {
         CourseDTO course = catalogServiceClient.getCourseById(request.getCourseId());
 
         if (!"ACTIVE".equals(course.getStatus())) {
-            throw new BadRequestException("Cannot purchase inactive course");
+            throw new CommerceServiceException(HttpStatus.BAD_REQUEST, "Cannot purchase inactive course");
         }
 
         boolean isEnrolled = enrollmentServiceClient.checkEnrollment(request.getUserId(), request.getCourseId());
@@ -64,7 +64,7 @@ public class CommerceServiceImpl implements CommerceService {
         }
 
         if (request.getPaymentMethod() == null || request.getPaymentMethod().trim().isEmpty()) {
-             throw new CommerceServiceException(HttpStatus.BAD_REQUEST, ErrorMessages.INVALID_PAYMENT);
+             throw new CommerceServiceException(HttpStatus.BAD_REQUEST, "Invalid payment method");
         }
 
         Order order = new Order();
