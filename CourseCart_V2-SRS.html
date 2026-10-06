@@ -903,7 +903,7 @@
 <span><strong>Primary Microservice:</strong> Catalog Service</span>
 </div>
 <h4 class="sub2-title">Acceptance Criteria</h4><ul><li>As an admin, I want to manage course metadata, so that I can define what is sold on the platform.</li><li>Administrators can view all courses regardless of their current publishing status.</li><li>Administrators can create and edit courses by providing a Title, Description, Price, and Category.</li><li>Every course must be assigned to exactly one existing category.</li><li>Administrators can set a fixed price for the course, including setting it to free.</li><li>Newly created courses shall default to a 'Draft' status.</li><li>The system must validate that the price is not negative and that all required fields are provided before saving.</li><li>Administrators can delete a course. Deleting a course must also securely remove all of its associated lessons.</li></ul>
-<div class="trainee-note" style="margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 4px;"><h4 style="margin-bottom: 10px; color: #b45309; font-weight: 700; font-size: 14px;">Trainee Implementation &amp; Verification Guide</h4></div></div>
+</div>
 <!-- US06 -->
 <div class="us-card trainee-task" id="us06">
 <h3>US 06 – Admin Lesson Management <span class="badge-trainee">Trainee Task</span></h3>
@@ -913,7 +913,7 @@
 </div>
 <h4 class="sub2-title">Acceptance Criteria</h4>
 <ul><li>As an admin, I want to manage lessons within a course, so that I can build the educational content.</li><li>Administrators can navigate into a specific course to manage its associated lessons.</li><li>Administrators can create a text-based lesson with a Title and Content for a course.</li><li>Administrators can edit existing lesson titles and their text content.</li><li>Administrators can completely delete a lesson from a course.</li><li>Deleting a lesson must be handled gracefully so that it does not corrupt or break the learning progress records of users currently enrolled in the course.</li></ul>
-<div class="trainee-note" style="margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 4px;"><h4 style="margin-bottom: 10px; color: #b45309; font-weight: 700; font-size: 14px;">Trainee Implementation &amp; Verification Guide</h4></div></div>
+</div>
 <!-- US07 -->
 <div class="us-card trainee-task" id="us07">
 <h3>US 07 – Admin Course Lifecycle Management <span class="badge-trainee">Trainee Task</span></h3>
@@ -922,7 +922,7 @@
 <span><strong>Primary Microservice:</strong> Catalog Service</span>
 </div>
 <h4 class="sub2-title">Acceptance Criteria</h4><ul><li>As an admin, I want to toggle a course's status between Draft, Active, and Inactive, so that I can control its public availability.</li><li>Course publishing statuses are strictly limited to Draft, Active, or Inactive.</li><li>Administrators can change a Draft course to Active to publish it to the public catalog.</li><li>Administrators can change an Active course to Inactive to retire it from future sales.</li><li>Inactive courses must immediately be hidden from the public catalog for new customers.</li><li>Changing a course's status to Inactive must not affect previously enrolled users; they must retain full access to the course in their learning dashboard.</li></ul>
-<div class="trainee-note" style="margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 4px;"><h4 style="margin-bottom: 10px; color: #b45309; font-weight: 700; font-size: 14px;">Trainee Implementation &amp; Verification Guide</h4></div></div>
+</div>
 <!-- US08 -->
 <div class="us-card preimpl" id="us08">
 <h3>US 08 – Browse and Search Catalog</h3>
@@ -969,7 +969,7 @@
 </div>
 <h4 class="sub2-title">Acceptance Criteria</h4>
 <ul><li>As a user, I want to see a list of all courses I am enrolled in, so that I can resume learning.</li><li>The system shall display a personalized dashboard of all courses the user is enrolled in, including any courses that have since been retired by administrators.</li><li>The system shall automatically calculate and display the user's overall progress percentage for each course.</li><li>The dashboard must display a welcoming and helpful message if the user has not yet enrolled in any courses.</li></ul>
-<div class="trainee-note" style="margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 4px;"><h4 style="margin-bottom: 10px; color: #b45309; font-weight: 700; font-size: 14px;">Trainee Implementation &amp; Verification Guide</h4></div></div>
+</div>
 <!-- US13 -->
 <div class="us-card trainee-task" id="us13">
 <h3>US 13 – Access Course Content <span class="badge-trainee">Trainee Task</span></h3>
@@ -979,7 +979,7 @@
 </div>
 <h4 class="sub2-title">Acceptance Criteria</h4>
 <ul><li>As an enrolled user, I want to read the lessons of a course, so that I can learn the material.</li><li>Enrolled users can navigate into a course to view the full syllabus and access lesson materials.</li><li>Users can comfortably view the text-based educational content of any selected lesson.</li><li>The system must strictly deny access and gracefully redirect any non-enrolled user attempting to view restricted lesson content directly.</li></ul>
-<div class="trainee-note" style="margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 4px;"><h4 style="margin-bottom: 10px; color: #b45309; font-weight: 700; font-size: 14px;">Trainee Implementation &amp; Verification Guide</h4></div></div>
+</div>
 <!-- US14 -->
 <div class="us-card trainee-task" id="us14">
 <h3>US 14 – Track Lesson Progress <span class="badge-trainee">Trainee Task</span></h3>
@@ -989,7 +989,7 @@
 </div>
 <h4 class="sub2-title">Acceptance Criteria</h4>
 <ul><li>As an enrolled user, I want to mark lessons as complete, so that my overall course progress is updated.</li><li>Users can manually toggle a lesson's status between Complete and Incomplete.</li><li>Toggling a lesson's status immediately and securely saves the user's progress.</li><li>The course's overall progress percentage is recalculated and updated dynamically on the screen in real-time.</li></ul>
-<div class="trainee-note" style="margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 4px;"><h4 style="margin-bottom: 10px; color: #b45309; font-weight: 700; font-size: 14px;">Trainee Implementation &amp; Verification Guide</h4></div></div>
+</div>
 <!-- US15 -->
 <div class="us-card trainee-task" id="us15">
 <h3>US 15 – Admin Dashboard <span class="badge-trainee">Trainee Task</span></h3>
@@ -999,7 +999,7 @@
 </div>
 <h4 class="sub2-title">Acceptance Criteria</h4>
 <ul><li>As an admin, I want to view high-level platform metrics, so that I can understand business performance.</li><li>The system shall display the total count of registered users on the platform.</li><li>The system shall display the total count of published, active courses.</li><li>The system shall display the total number of course enrollments.</li><li>The system shall display the total aggregated revenue from all successful transactions.</li><li>These performance metrics must be gathered efficiently and displayed clearly in dashboard summaries.</li><li>The dashboard shall also display a list of recent transactions for administrative reference.</li></ul>
-<div class="trainee-note" style="margin-top: 15px; padding: 15px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 4px;"><h4 style="margin-bottom: 10px; color: #b45309; font-weight: 700; font-size: 14px;">Trainee Implementation &amp; Verification Guide</h4></div></div>
+</div>
 <!-- 3.1 Final List -->
 <h3 class="sub-title" id="s3-1">4.1 Final User Story List</h3>
 <div class="tbl-wrap">
@@ -1478,35 +1478,64 @@
 </div>
 </section>
 
-<section id="sec-13">
-<h2 class="sec-title">13. Verification Checklist</h2>
-<div class="checklist-block">
-  <div class="checklist-item">
-    <input type="checkbox" disabled>
-    <label>Have all 19 files containing <code>TODO[TRAINEE]</code> been fully implemented?</label>
+<section id="sec-13" style="margin-top: 40px;">
+<h2 class="sec-title">13. Trainee Verification Checklist</h2>
+<div style="border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: var(--card-shadow); background: var(--white); margin-top: 20px;">
+  <h3 style="color: var(--text); font-size: 18px; font-weight: 700; margin-bottom: 24px;">Before submitting, verify:</h3>
+  
+  <div style="display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start;">
+    <div style="flex-shrink: 0;">
+      <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: #eef2ff; color: var(--primary);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </span>
+    </div>
+    <div style="color: var(--sidebar-text); font-size: 15px; line-height: 1.5; padding-top: 1px;">
+      All <code style="color: #d97706; background-color: #fffbeb; border: 1px solid #fde68a; padding: 2px 6px; border-radius: 4px; font-size: 13px; font-weight: 600; font-family: monospace;">TODO[TRAINEE]</code> markers are implemented across backend and frontend files.
+    </div>
   </div>
-  <div class="checklist-item">
-    <input type="checkbox" disabled>
-    <label>Do all backend endpoints return the correctly structured DTOs as per the API specifications?</label>
+
+  <div style="border-top: 1px solid var(--surface); margin-bottom: 20px;"></div>
+
+  <div style="display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start;">
+    <div style="flex-shrink: 0;">
+      <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: #eef2ff; color: var(--primary);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </span>
+    </div>
+    <div style="color: var(--sidebar-text); font-size: 15px; line-height: 1.5; padding-top: 1px;">
+      The application compiles and runs without errors.
+    </div>
   </div>
-  <div class="checklist-item">
-    <input type="checkbox" disabled>
-    <label>Are Angular services correctly wired to the respective backend microservices?</label>
+
+  <div style="border-top: 1px solid var(--surface); margin-bottom: 20px;"></div>
+
+  <div style="display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start;">
+    <div style="flex-shrink: 0;">
+      <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: #eef2ff; color: var(--primary);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </span>
+    </div>
+    <div style="color: var(--sidebar-text); font-size: 15px; line-height: 1.5; padding-top: 1px;">
+      Pre-implemented features (Registration, Login, Profile, Checkout, Category Management) still work perfectly.
+    </div>
   </div>
-  <div class="checklist-item">
-    <input type="checkbox" disabled>
-    <label>Are UI components correctly binding the data and handling loading/error states?</label>
+
+  <div style="border-top: 1px solid var(--surface); margin-bottom: 20px;"></div>
+
+  <div style="display: flex; gap: 16px; margin-bottom: 8px; align-items: flex-start;">
+    <div style="flex-shrink: 0;">
+      <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: #eef2ff; color: var(--primary);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </span>
+    </div>
+    <div style="color: var(--sidebar-text); font-size: 15px; line-height: 1.5; padding-top: 1px;">
+      The user journey flows horizontally: administrators seamlessly manage Courses and Lessons via the Admin Dashboard, while learners navigate their Learning Dashboard and track individual Lesson Progress.
+    </div>
   </div>
+
 </div>
 </section>
 
-<section id="sec-14">
-<h2 class="sec-title">14. Deliverables</h2>
-<ul>
-  <li>A ZIP file containing the complete source code.</li>
-  <li>A text document demonstrating that all 19 TODO tasks have been resolved.</li>
-  <li>Optionally, Postman collections demonstrating successful API calls to the newly implemented endpoints.</li>
-</ul>
-</section>
+
 </body>
 </html>
