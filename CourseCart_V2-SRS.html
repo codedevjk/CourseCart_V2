@@ -1403,75 +1403,110 @@
 </div>
 </section><section id="sec-12">
 <h2 class="sec-title">12. Trainee Implementation Guide</h2>
-<p>The following files contain <code>TODO[TRAINEE]</code> markers and must be implemented in full. Entities,
-          DTOs, and repositories are pre-provided — do not modify them.</p>
-<h3 class="sub-title">12.1 Backend — Controllers &amp; Services</h3>
+<p>The following <strong>19 files</strong> contain all <code>TODO[TRAINEE]</code> markers and must be implemented in full.
+  Entities, DTOs, and repositories are pre-provided &mdash; do not modify them.</p>
+
+<h3 class="sub-title">12.1 Backend &mdash; Controllers &amp; Service Layer (6 Java files)</h3>
 <div class="file-group">
-<div class="fg-label">User Service</div>
-<ul>
-<li>backend/.../controller/<strong>UserController.java</strong> <span class="tag">← TODO[TRAINEE] for US15</span></li>
-</ul>
-<div class="fg-label" style="margin-top:10px;">Catalog Service</div>
-<ul>
-<li>backend/.../controller/<strong>CourseController.java</strong> <span class="tag">← TODO[TRAINEE] for US05, 06, 07, 15</span></li>
-<li>backend/.../service/<strong>CatalogServiceImpl.java</strong> <span class="tag">← TODO[TRAINEE] for US05, 06, 07, 15</span></li>
-</ul>
-<div class="fg-label" style="margin-top:10px;">Commerce Service</div>
-<ul>
-<li>backend/.../controller/<strong>CommerceController.java</strong> <span class="tag">← TODO[TRAINEE] for US15</span></li>
-</ul>
-<div class="fg-label" style="margin-top:10px;">Enrollment Service</div>
-<ul>
-<li>backend/.../controller/<strong>EnrollmentController.java</strong> <span class="tag">← TODO[TRAINEE] for US12, 13, 14, 15</span></li>
-<li>backend/.../service/<strong>EnrollmentServiceImpl.java</strong> <span class="tag">← TODO[TRAINEE] for US12, 13, 14, 15</span></li>
-</ul>
+  <div class="fg-label">User Service</div>
+  <ul>
+    <li>backend/user-service/src/main/java/com/coursecart/user/controller/<strong>UserController.java</strong>
+      <span class="tag">&larr; TODO[TRAINEE] for US15</span></li>
+  </ul>
+  <div class="fg-label" style="margin-top:10px;">Catalog Service</div>
+  <ul>
+    <li>backend/catalog-service/src/main/java/com/coursecart/catalog/controller/<strong>CourseController.java</strong>
+      <span class="tag">&larr; TODO[TRAINEE] for US05, 06, 07, 15</span></li>
+    <li>backend/catalog-service/src/main/java/com/coursecart/catalog/service/<strong>CatalogServiceImpl.java</strong>
+      <span class="tag">&larr; TODO[TRAINEE] for US05, 06, 07, 15</span></li>
+  </ul>
+  <div class="fg-label" style="margin-top:10px;">Commerce Service</div>
+  <ul>
+    <li>backend/commerce-service/src/main/java/com/coursecart/commerce/controller/<strong>CommerceController.java</strong>
+      <span class="tag">&larr; TODO[TRAINEE] for US15</span></li>
+  </ul>
+  <div class="fg-label" style="margin-top:10px;">Enrollment Service</div>
+  <ul>
+    <li>backend/enrollment-service/src/main/java/com/coursecart/enrollment/controller/<strong>EnrollmentController.java</strong>
+      <span class="tag">&larr; TODO[TRAINEE] for US12, 13, 14, 15</span></li>
+    <li>backend/enrollment-service/src/main/java/com/coursecart/enrollment/service/<strong>EnrollmentServiceImpl.java</strong>
+      <span class="tag">&larr; TODO[TRAINEE] for US12, 13, 14, 15</span></li>
+  </ul>
 </div>
-<h3 class="sub-title">12.2 Frontend — Angular Components &amp; Services</h3>
+
+<h3 class="sub-title">12.2 Frontend &mdash; Angular Services (3 TypeScript files)</h3>
 <div class="file-group">
-<div class="fg-label">Frontend Services</div>
-<ul>
-<li>frontend/.../services/<strong>catalog.service.ts</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-<li>frontend/.../services/<strong>enrollment.service.ts</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-<li>frontend/.../services/<strong>commerce.service.ts</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-</ul>
-<div class="fg-label" style="margin-top:10px;">Admin Management (US05, 06, 07)</div>
-<ul>
-<li>frontend/.../admin/course-management/<strong>course-management.component.ts &amp; .html</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-<li>frontend/.../admin/lesson-management/<strong>lesson-management.component.ts &amp; .html</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-</ul>
-<div class="fg-label" style="margin-top:10px;">Learning &amp; Progress (US12, 13, 14)</div>
-<ul>
-<li>frontend/.../learning/learning-dashboard/<strong>learning-dashboard.component.ts &amp; .html</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-<li>frontend/.../learning/course-learning/<strong>course-learning.component.ts &amp; .html</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-</ul>
-<div class="fg-label" style="margin-top:10px;">Admin Dashboard (US15)</div>
-<ul>
-<li>frontend/.../admin/admin-dashboard/<strong>admin-dashboard.component.ts &amp; .html</strong> <span class="tag">← TODO[TRAINEE]</span></li>
-</ul>
+  <div class="fg-label">Frontend Services</div>
+  <ul>
+    <li>frontend/coursecart-ui/src/app/services/<strong>catalog.service.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/services/<strong>enrollment.service.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/services/<strong>commerce.service.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+  </ul>
 </div>
-</section><section id="sec-13">
-<h2 class="sec-title">13. Trainee Verification Checklist</h2>
+
+<h3 class="sub-title">12.3 Frontend &mdash; Angular Feature Components (10 files)</h3>
+<div class="file-group">
+  <div class="fg-label">Admin Management (US05, 06, 07, 15)</div>
+  <ul>
+    <li>frontend/coursecart-ui/src/app/components/admin/admin-dashboard/<strong>admin-dashboard.component.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/admin/admin-dashboard/<strong>admin-dashboard.component.html</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/admin/course-management/<strong>course-management.component.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/admin/course-management/<strong>course-management.component.html</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/admin/lesson-management/<strong>lesson-management.component.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/admin/lesson-management/<strong>lesson-management.component.html</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+  </ul>
+  <div class="fg-label" style="margin-top:10px;">Learning &amp; Progress (US12, 13, 14)</div>
+  <ul>
+    <li>frontend/coursecart-ui/src/app/components/learning/learning-dashboard/<strong>learning-dashboard.component.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/learning/learning-dashboard/<strong>learning-dashboard.component.html</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/learning/course-learning/<strong>course-learning.component.ts</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+    <li>frontend/coursecart-ui/src/app/components/learning/course-learning/<strong>course-learning.component.html</strong>
+      <span class="tag">&larr; TODO[TRAINEE]</span></li>
+  </ul>
+</div>
+</section>
+
+<section id="sec-13">
+<h2 class="sec-title">13. Verification Checklist</h2>
 <div class="checklist-block">
-<h4>Before submitting, verify:</h4>
-<ul>
-<li>All <code>TODO[TRAINEE]</code> markers are implemented across backend and frontend files.</li>
-<li>The application compiles and runs without errors.</li>
-<li>Pre-implemented features (Registration, Login, User Profile, Catalog Browse, Checkout) still work perfectly.</li>
-<li>An Admin can successfully create courses and lessons, manage their lifecycle, and view the Admin Dashboard metrics.</li>
-<li>A Customer can successfully view their learning dashboard, access enrolled course content, and toggle lesson completion.</li>
-</ul>
+  <div class="checklist-item">
+    <input type="checkbox" disabled>
+    <label>Have all 19 files containing <code>TODO[TRAINEE]</code> been fully implemented?</label>
+  </div>
+  <div class="checklist-item">
+    <input type="checkbox" disabled>
+    <label>Do all backend endpoints return the correctly structured DTOs as per the API specifications?</label>
+  </div>
+  <div class="checklist-item">
+    <input type="checkbox" disabled>
+    <label>Are Angular services correctly wired to the respective backend microservices?</label>
+  </div>
+  <div class="checklist-item">
+    <input type="checkbox" disabled>
+    <label>Are UI components correctly binding the data and handling loading/error states?</label>
+  </div>
 </div>
-</section><section id="sec-14">
-<h2 class="sec-title">14. Final Deliverables</h2>
+</section>
+
+<section id="sec-14">
+<h2 class="sec-title">14. Deliverables</h2>
 <ul>
-<li>Application archive with complete source code</li>
-<li>Database DDL/DML Scripts</li>
-<li>Running Microservices implementation</li>
+  <li>A ZIP file containing the complete source code.</li>
+  <li>A text document demonstrating that all 19 TODO tasks have been resolved.</li>
+  <li>Optionally, Postman collections demonstrating successful API calls to the newly implemented endpoints.</li>
 </ul>
-<p style="text-align:center; color: var(--primary); font-weight:700; margin-top:32px; font-size:1.05rem;">
-          Good Luck! Build clean, maintainable, and well-tested code.
-        </p>
-</section></main>
-</div>
+</section>
 </body>
 </html>
